@@ -8,9 +8,9 @@ export default function Navigation(){
             </div>
             <ul className="menu">
                 <li>Home</li>
-                <li>About Us</li>
-                <li>Contacts</li>
-                <li>Login</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Register</li>
             </ul>
 
         </nav>

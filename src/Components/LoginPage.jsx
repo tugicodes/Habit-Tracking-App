@@ -9,7 +9,7 @@ export default function LoginPage(){
 
             <div className="loginPageForm"> 
             <form>
-                <label htmlFor="form">Login Form</label>
+                <label htmlFor="form">Login here</label>
                 <label htmlFor="user">Username:</label>
                 <input type="text" id="user" name="username" />
                 <label htmlFor="pass">Password:</label>
