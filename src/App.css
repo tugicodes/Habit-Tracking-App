@@ -19,7 +19,7 @@ body{
   top: 0;
   left: 0;
   box-sizing:border-box;
-  
+  z-index: 100;
 }
 
 .logoHolder > .logo {
@@ -45,15 +45,115 @@ body{
 }
 
 /* welcome page styling */
-.welcomeText{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: white;
-  background-color: rgb(0,0,0);
-  padding: 20px 40px;
-  border-radius: 10px;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.welcomePage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.welcomePage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* 50% dark overlay */
+  z-index: 1;
+}
+
+
+.welcomeText{
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(0,0,0,0.7);
+  padding: 40px 80px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 2;
+  max-width: 80%;
+}
+
+/* login page styling*/
+.loginPageSection{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  height: 400px;
+  margin-top: 50px;
+  background-color: #f0f0f0;
+  padding: 0 20px;
+
+}
+
+.loginPageText{
+  text-align: center;
+  color: black;
+  
+}
+
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form label:not(:first-child) {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: -10px;
+}
+
+form input {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+form button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: 20px;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
 }

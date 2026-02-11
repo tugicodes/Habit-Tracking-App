@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navigation from './Components/NavBar'
 import WelcomePage from  './Components/WelcomePage'
+import LoginPage from './Components/LoginPage'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     <>
     <Navigation/>
     <WelcomePage/>
+    <LoginPage/>
       
     </>
   );
