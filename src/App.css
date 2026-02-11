@@ -40,7 +40,7 @@ body{
 
 .menu li:hover{
   padding:10px;
-  background-color: #febc57;
+  background-color: #a92b02;
   color: white;
 }
 
@@ -101,7 +101,7 @@ body{
 }
 
 form {
-  background: white;
+  background: #a92b02;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.1);
@@ -115,14 +115,14 @@ form {
 form label:first-child {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
   text-align: center;
 }
 
 form label:not(:first-child) {
   font-weight: 600;
-  color: #555;
+  color: white;
   margin-bottom: -10px;
 }
 
@@ -132,6 +132,7 @@ form input {
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.3s ease;
+  background-color: transparent;
 }
 
 form input:focus {
@@ -141,7 +142,7 @@ form input:focus {
 }
 
 form button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: rgb(0,0,0);
   color: white;
   padding: 14px;
   border: none;

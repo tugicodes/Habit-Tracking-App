@@ -3,8 +3,8 @@ export default function LoginPage(){
         <div className="loginPageSection">
 
             <div className="loginPageText">
-                <h1>Welcome back!</h1>
-                <p> We missed you. What are we looking for this time?</p>
+                <h1>Welcome Back.</h1>
+                <p>What habits are we working on this time?</p>
             </div>
 
             <div className="loginPageForm"> 
