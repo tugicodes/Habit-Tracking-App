@@ -1,16 +1,44 @@
-# React + Vite
+# Habitual 🌟
+Track your habits. Achieve your goals. Become your best self.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Habitual is a simple, elegant habit tracking web application built with React. It helps users build positive habits by tracking daily progress and maintaining streaks.
 
-Currently, two official plugins are available:
+This project was created as a learning exercise to practice:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React components and state management
 
-## React Compiler
+CSS styling and responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Form handling
 
-## Expanding the ESLint configuration
+Local storage for data persistence
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Modern UI/UX patterns
+
+# Features
+## Current Features
+Welcome Section - Full-screen background image with welcome message and dark overlay
+
+Fixed Navigation Bar - Always accessible at the top of the page
+
+Login Form - Clean, glass-morphism styled form with transparent inputs
+
+Responsive Design - Works on desktop and tablet devices
+
+Modern UI - Smooth hover effects, gradients, and shadows
+
+## Design Highlights
+Dark theme with orange accent (#a92b02)
+
+Glass morphism effect on form inputs
+
+Full-screen hero section with image overlay
+
+Hover animations on buttons and menu items
+
+Gradient buttons and focus states
+
+## Prerequisites
+Node.js (v14 or higher)
+
+npm or yarn
