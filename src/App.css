@@ -158,3 +158,62 @@ form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
 }
+
+
+/* Services section styling */
+.servicesSection {
+  padding: 40px;
+  background-color: #f4f6f8;
+  text-align:center;
+}
+
+.servicesTitle {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.servicesCards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.servicesCards .cardView img{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cardView {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width: 300px;
+  transition: transform 0.2s ease;
+  max-width: 300px;
+}
+.cardView:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+
+.card-header{
+  margin-bottom: 15px;
+}
+
+.card-title{
+  margin:0;
+  font-size: 14px;
+  color: #777;
+}
+
+.card-description{
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
