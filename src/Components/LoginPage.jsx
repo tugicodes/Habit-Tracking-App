@@ -49,28 +49,31 @@ function LoginPage(){
 
             <div className="loginPageText">
                 <h1>Welcome back!</h1>
-                <p> We missed you. What are we looking for this time?</p>
+                <p> We missed you. What are we working on this time?</p>
             </div>
 
-            <div className="loginPageForm"> 
+            <div className="loginPageForm">
+                <div className="loginBox">
 
-            <form onSubmit={handleSubmit} >
+                <form onSubmit={handleSubmit} >
+                <h2>Already have an account? </h2> 
 
-                <input
-                 type="text" 
-                 value={username}
-                 onChange={(e) => setUsername(e.target.value)}
-                 placeholder="Username"
-                 />
+                    <input
+                    type="text" 
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    placeholder="Username"
+                    />
 
-                <input 
-                type="password" 
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                />
-                <button type="submit">Log In</button>
-            </form>
+                    <input 
+                    type="password" 
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
             </div>
             
         </div>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
 
 *{
   margin:0;
@@ -59,6 +60,31 @@ body{
   color: white;
 }
 
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-login-btn {
+  background: white;
+  border: none;
+  color: #1a1a1a;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+
+.nav-login-btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
 /* welcome page styling */
 .welcomePage {
   position: relative;
@@ -98,6 +124,128 @@ body{
   max-width: 80%;
 }
 
+/* HOW IT WORKS */
+.home-how {
+  background: white;
+  padding: 100px 60px;
+  align-items: center; 
+  /*display: flex;
+  flex-direction: column;
+  */
+}
+
+.how-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 48px;
+  color: #1a1a1a;
+  text-align: center; /* add this */
+}
+
+.home-how .how-section-title {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-steps {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.home-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.home-step-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: #e8e4df;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 80px;
+  transition: color 0.2s;
+}
+
+.home-step:hover .home-step-number {
+  color: #a92b02;
+}
+
+.home-step-content {
+  padding-top: 8px;
+  border-top: 2px solid #e8e4df;
+  flex: 1;
+  transition: border-color 0.2s;
+}
+
+.home-step:hover .home-step-content {
+  border-color: #a92b02;
+}
+
+.home-step-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.home-step-content p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Call to action section*/
+.home-cta {
+  background: #1a1a1a;
+  color: #f5f2ee;
+  text-align: center;
+  padding: 100px 60px;
+}
+
+.home-cta h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.home-cta p {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.home-cta-btn {
+  background: #a92b02;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.home-cta-btn:hover {
+  background: #e85d26;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(169, 43, 2, 0.4);
+}
+
 /* login page styling*/
 .loginPageSection{
   display: flex;
@@ -122,8 +270,8 @@ body{
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 }
 
-form {
-  background: #a92b02;
+.loginPageForm form {
+  background: white;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.1);
@@ -134,21 +282,21 @@ form {
   gap: 15px;
 }
 
-form label:first-child {
+.loginPageForm form label:first-child {
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #1a1a1a;
   margin-bottom: 20px;
   text-align: center;
 }
 
-form label:not(:first-child) {
+.loginPageForm form label:not(:first-child) {
   font-weight: 600;
-  color: white;
+  color: #1a1a1a;
   margin-bottom: -10px;
 }
 
-form input {
+.loginPageForm form input {
   padding: 12px 15px;
   border: 2px solid #e0e0e0;
   border-radius: 5px;
@@ -157,14 +305,14 @@ form input {
   background-color: transparent;
 }
 
-form input:focus {
+.loginPageForm form input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #a92b02;
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-form button {
-  background: rgb(0,0,0);
+.loginPageForm form button {
+  background: #a92b02;
   color: white;
   padding: 14px;
   border: none;
@@ -176,9 +324,9 @@ form button {
   margin-top: 20px;
 }
 
-form button:hover {
+.loginPageForm form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  background: #e85d26;
 }
 
 
@@ -247,16 +395,13 @@ form button:hover {
 }
 
 /*Signup page styling*/
-.signupContainer{
+.signupContainer {
   display: flex;
   justify-content: center;
-  gap: 100px;
   align-items: center;
-  height: 400px;
+  min-height: 100vh;
   background-color: #f0f0f0;
-  padding: 0 20px;
-  flex:1;
-  display:flex;
+  padding: 100px 20px 40px; /* top padding pushes it below the fixed navbar */
 }
 
 .signupBox{
@@ -269,9 +414,53 @@ form button:hover {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  overflow: hidden;
+}
+
+.signupBox form {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signupBox form input {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.signupBox form input:focus {
+  outline: none;
+  border-color: #a92b02;
+  box-shadow: 0 0 0 3px rgba(169, 43, 2, 0.1);
+}
+
+.signupBox form button {
+  background: #a92b02;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.signupBox form button:hover {
+  background: #e85d26;
+  transform: translateY(-2px);
 }
 
 /*Contacts page styling*/
+
 .contactsPage{
   padding: 60px;
   background-color: #f4f6f8;
@@ -290,6 +479,7 @@ form button:hover {
 }
 
 /*Footer styling */
+
 .footer{
   background-color:#000000;
   color: white; 
@@ -298,6 +488,7 @@ form button:hover {
 }
 
 /*Dashboard styling*/
+
 .db-wrapper {
   background: #0e0e0e;
   color: #f0ede8;
@@ -560,3 +751,183 @@ form button:hover {
 .db-day-dot.partial { background: #242424; color: #e85d26; border: 1px solid #a92b02; }
 .db-day-dot.empty { background: #242424; color: #888; }
 .db-day-dot.today { box-shadow: 0 0 0 2px #e85d26; background: #242424; color: #f0ede8; }
+
+/*About page styling*/
+.about-wrapper {
+  background: #f5f2ee;
+  color: #1a1a1a;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+/* HERO */
+.about-hero {
+  position: relative;
+  padding: 120px 60px 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.about-hero-accent {
+  position: absolute;
+  top: 60px;
+  right: -80px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(169, 43, 2, 0.12), transparent 70%);
+  pointer-events: none;
+}
+
+.about-eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a92b02;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.0;
+  letter-spacing: 1px;
+  max-width: 750px;
+  margin-bottom: 28px;
+  color: #1a1a1a;
+}
+
+.about-hero-title span {
+  color: #a92b02;
+  font-style: italic;
+  font-family: Georgia, serif;
+}
+
+.about-hero-sub {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 560px;
+  font-weight: 300;
+}
+
+/* MISSION */
+.about-mission {
+  background: #1a1a1a;
+  color: #f5f2ee;
+  padding: 100px 60px;
+  position: relative;
+}
+
+.about-mission-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #a92b02;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.about-mission-quote {
+  font-family: Georgia, serif;
+  font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+  font-style: italic;
+  line-height: 1.4;
+  color: #f5f2ee;
+  max-width: 800px;
+  border-left: 4px solid #a92b02;
+  padding-left: 28px;
+  margin-bottom: 36px;
+}
+
+.about-mission-body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #aaa;
+  max-width: 640px;
+  padding-left: 32px;
+  font-weight: 300;
+}
+
+/* VALUES */
+.about-values {
+  padding: 100px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 48px;
+  color: #1a1a1a;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about-value-card {
+  background: white;
+  border: 1px solid #e8e4df;
+  border-radius: 16px;
+  padding: 36px 28px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-value-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #a92b02, #e85d26);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.about-value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.about-value-card:hover::before {
+  transform: scaleX(1);
+}
+
+.about-value-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.about-value-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.about-value-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+  font-weight: 300;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-hero { padding: 80px 24px 60px; }
+  .about-mission { padding: 60px 24px; }
+  .about-values { padding: 60px 24px; }
+  .about-values-grid { grid-template-columns: 1fr; }
+  .about-how { padding: 60px 24px; }
+  .about-cta { padding: 60px 24px; }
+}

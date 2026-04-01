@@ -42,7 +42,7 @@ function SignupForm() {
   return (
     <div className="signupContainer">
       <div className="signupBox">
-        <h2>Join the family</h2>
+        <h2>Create an account</h2>
 
         <form onSubmit={handleSubmit}>
           <input

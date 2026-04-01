@@ -9,9 +9,13 @@ export default function Navigation(){
             </div>
             <ul className="menu">
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/services">About</Link></li>
+                <li><Link to="/about">About</Link></li>
                 <li><Link to="/contacts">Contact Us</Link></li>
                 <li><Link to="/signup">Join Us</Link></li>
+
+                <Link to="/login" style={{textDecoration: 'none'}}>
+                <button className="nav-login-btn">Log in</button>
+                </Link>
             </ul>
 
         </nav>

@@ -14,6 +14,7 @@ import Footer from './Components/Footer'
 import ProtectedRoute from './Components/ProtectedRoute'
 import UserDashboard from './Components/UserDashboard'
 import { useLocation } from 'react-router-dom'
+import About from './Components/About'
 
 function App() {
   const location = useLocation();
@@ -23,13 +24,14 @@ function App() {
     <>
     <div className="appLayout">
         {!hiddenNavRoutes.includes(location.pathname) && <Navigation />}
-        
+
     <main className='pageContent'>
       <Routes>
         <Route path="/" element={<WelcomePage/>}/>
-        <Route path="/services" element={<Services/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/contacts" element={<Contacts/>} />
+        <Route path="/login" element={<LoginPage/>}/>
         <Route path= "/user-dashboard"
          element={
           <ProtectedRoute>
