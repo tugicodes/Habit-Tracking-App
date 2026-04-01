@@ -11,19 +11,30 @@ import Contacts from './Components/Contacts'
 import {Routes, Route} from 'react-router-dom'
 import SignUp from './Components/SignUp'
 import Footer from './Components/Footer'
+import ProtectedRoute from './Components/ProtectedRoute'
+import UserDashboard from './Components/UserDashboard'
+import { useLocation } from 'react-router-dom'
+
 function App() {
+  const location = useLocation();
+  const hiddenNavRoutes = ['/user-dashboard'];
 
   return (
     <>
     <div className="appLayout">
-    <Navigation/>
-
-    <main className='appLayout'>
+        {!hiddenNavRoutes.includes(location.pathname) && <Navigation />}
+        
+    <main className='pageContent'>
       <Routes>
         <Route path="/" element={<WelcomePage/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/contacts" element={<Contacts/>} />
+        <Route path= "/user-dashboard"
+         element={
+          <ProtectedRoute>
+                <UserDashboard />
+                </ProtectedRoute>}/>
         
       </Routes>
     </main>
