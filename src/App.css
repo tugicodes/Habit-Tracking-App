@@ -931,3 +931,97 @@ body{
   .about-how { padding: 60px 24px; }
   .about-cta { padding: 60px 24px; }
 }
+
+/* Admin Dashboard */
+.admin-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.admin-user-row {
+  background: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-user-row:hover {
+  border-color: #a92b02;
+}
+
+.admin-user-info {
+  flex: 1;
+}
+
+.admin-user-name {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.admin-user-id {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.admin-role-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.admin-role-badge.admin {
+  background: #a92b02;
+  color: white;
+}
+
+.admin-role-badge.user {
+  background: #242424;
+  color: #888;
+  border: 1px solid #2e2e2e;
+}
+
+.admin-delete-btn {
+  background: transparent;
+  border: 1px solid #2e2e2e;
+  color: #888;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+
+.admin-delete-btn:hover {
+  border-color: #a92b02;
+  color: #e85d26;
+}
+
+.admin-deleted-row {
+  background: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e85d26;
+  font-size: 14px;
+}
+
+.admin-topbar-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.admin-section-margin {
+  margin-top: 40px;
+}

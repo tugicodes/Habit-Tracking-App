@@ -32,6 +32,7 @@ router.post("/", async (req, res) => {
     await newUser.save(); // save to database
 
     res.status(201).json({
+      user: { username: newUser.username, id: newUser._id },
       message: "Signup successful"
     });
     

@@ -1,5 +1,4 @@
 import welcomeImage from '../assets/welcomeImage.jpg'
-import LoginPage from './LoginPage'
 import Services from './Services'
 import { useNavigate } from 'react-router-dom'
 

@@ -30,7 +30,8 @@ function SignupForm() {
 
       // redirect if successful
       if (response.ok) {
-        navigate("/login");
+        localStorage.setItem("user", JSON.stringify(data.user));
+        navigate("/user-dashboard");
       }
 
     } catch (error) {

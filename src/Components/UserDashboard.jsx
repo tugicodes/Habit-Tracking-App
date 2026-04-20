@@ -44,7 +44,7 @@ export default function UserDashboard() {
     setHabits((prev) =>
       prev.map((h, i) => (i === index ? { ...h, done: !h.done } : h))
     );
-  };
+  }; //when a user clicks a Habit, it changes its status
 
   return (
     <div className="db-wrapper">
@@ -64,7 +64,7 @@ export default function UserDashboard() {
         </div>
       </div>
 
-      {/* MAIN */}
+      {/* MAIN CONTAINER */}
       <div className="db-main">
         {/* GREETING */}
         <div className="db-greeting">
@@ -74,7 +74,7 @@ export default function UserDashboard() {
           <p>{getDateString()} — Let's keep the streak alive.</p>
         </div>
 
-        {/* STATS */}
+        {/* STATS SECTION */}
         <div className="db-stats-row">
           <div className="db-stat-card">
             <div className="db-stat-label">Current Streak</div>
@@ -93,7 +93,7 @@ export default function UserDashboard() {
           </div>
         </div>
 
-        {/* HABITS */}
+        {/* HABITS SECTION */}
         <div className="db-section-header">
           <div className="db-section-title">TODAY'S HABITS</div>
         </div>
@@ -122,7 +122,7 @@ export default function UserDashboard() {
           ))}
         </div>
 
-        {/* WEEK */}
+        {/* WEEK SECTION */}
         <div className="db-week-grid">
           <div className="db-section-header" style={{ marginBottom: 0 }}>
             <div className="db-section-title">THIS WEEK</div>

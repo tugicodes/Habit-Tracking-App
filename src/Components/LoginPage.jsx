@@ -33,10 +33,12 @@ function LoginPage(){
         // save user in browser
         localStorage.setItem("user", JSON.stringify(data.user));
 
-        //  redirect to dashboard
-        navigate("/user-dashboard");
-      } else {
-        setMessage(data.message);
+         // redirect based on role
+        if (data.user.role === "admin") {
+          navigate("/admin-dashboard");  // takes admin to admin db
+        } else {
+          navigate("/user-dashboard");   // normal user goes here
+        }
       }
     } catch (error) {
       console.log(error);
